@@ -1,0 +1,169 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative; /* Ajouté pour positionner le bouton vert */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f8f8f8;
+}
+
+.header .back-button {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  background: none;
+  border: none;
+ 
+}
+
+.header .header-title {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0;
+  color: #6A8B85;
+}
+
+.header .spacer {
+  width: 75px; /* Taille similaire au bouton de retour pour équilibrer */
+}
+
+.chantier-list {
+  flex-grow: 1;
+  padding: 10px;
+  position: relative;
+}
+
+.chantier-card {
+  position: relative;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.chantier-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Overlay pour assombrir l'image de fond */
+  border-radius: 10px;
+}
+
+.chantier-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.chantier-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.chantier-info {
+  margin-left: 10px;
+  flex-grow: 1;
+}
+
+.chantier-info h2 {
+  margin: 0;
+}
+
+.chantier-info p {
+  margin: 5px 0;
+}
+
+.status.in-progress {
+  color: green;
+}
+
+.status.completed {
+  color: orange;
+}
+
+.chantier-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+.chantier-actions .edit-button,
+.chantier-actions .delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.chantier-actions .edit-button img,
+.chantier-actions .delete-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-top: 1px solid #ccc;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.footer .nav-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.footer .nav-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.button-vert {
+  position: fixed;
+  bottom: 130px;
+  right: 20px; /* Ajuster cette valeur pour coller le bouton plus à droite */
+  background-color: green;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000; /* S'assurer que le bouton est toujours au-dessus des autres éléments */
+}
+
+.button-vert img {
+  width: 60px;
+  height: 60px;
+}

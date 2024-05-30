@@ -1,0 +1,83 @@
+/* src/components/ChooseFloor.css */
+.choose-floor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 65vh;
+    padding: 20px;
+    text-align: center;
+  }
+    
+  .choose-floor-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin-bottom: 10px; /* Ajouté pour espacer du bouton suivant */
+  }
+  
+  .title {
+    color: #6A8B85;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle {
+    color: #aaa;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .floor-plan-image {
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 30px;
+  }
+  
+  .floor-select {
+    background-color: #a3bfa1;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 30px;
+  }
+  
+  .floor-label {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .floor-button {
+    background-color: white;
+    color: #6A8B85;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .next-button {
+    background-color: #7AC174;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 20px; /* Ajouté pour espacer du footer */
+  }
+  
+  .next-button:hover {
+    background-color: #69a65c;
+  }
+  

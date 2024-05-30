@@ -1,0 +1,50 @@
+/* src/components/RoomDetails.css */
+.room-details {
+  padding: 20px;
+}
+
+.room-details h2 {
+  margin-bottom: 20px;
+}
+
+.room-details form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.room-details form input,
+.room-details form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.room-details form button[type="button"] {
+  margin-top: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.room-details form button[type="button"]:hover {
+  background-color: #45a049;
+}
+
+.next-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,54 @@
+.detailed-analysis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.floor-plan-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.next-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.room {
+  cursor: pointer;
+  transition: fill 0.2s;
+}
+
+.room:hover {
+  fill: #8ebf42; /* light green */
+}
+
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  height: 40vw;
+  position: fixed;
+  bottom: 60px ;
+  padding: 10px;
+  gap: 15px;
+}
+.progress-bar {
+  bottom: 15px;
+}
